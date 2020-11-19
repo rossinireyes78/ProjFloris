@@ -26,7 +26,7 @@ public class FloristeriaRepo1 {
 	
 
 	
-	public List<Arbol1> getArbol11s(){
+	public List<Arbol1> getArbols(){
 		return new ArrayList<>(a);
 	}
 
@@ -61,7 +61,7 @@ public class FloristeriaRepo1 {
 
 	@Override
 	public String toString() {
-		return "getAllArbols " + getArbol11s().size() + ", getAllFlors" + getAllFlors().size()
+		return "getAllArbols " + getArbols().size() + ", getAllFlors" + getAllFlors().size()
 				+ ", getAllDecoracion " + getAllDecoracion().size() ;
 	}
 	

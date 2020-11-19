@@ -50,10 +50,11 @@ public class main_floristeriaapp {
 				if (opcion == 3) {
 
 					System.out.print("ingrese material:    ");
-					menu1();
-					
 					String material = e.next();
-					int opcion1 = e.nextInt();
+					/*menu1();
+					
+					
+					/*int opcion1 = e.nextInt();
 					while (opcion1 != 0) {
 					if (opcion1 == 1) {
 						
@@ -61,7 +62,7 @@ public class main_floristeriaapp {
 					}
 					if (opcion1 == 2) {
 						System.out.println("material:   madera");
-					}
+					}*/
 					System.out.println("ingrese precio:     ");
 					String precio = e.next();
 					Decoracion1 mop =new Decoracion1(material, precio);
@@ -74,7 +75,7 @@ public class main_floristeriaapp {
 				// Cas 4 = Stock
 				
 				if (opcion == 4) {
-					System.out.println( "STOCKS ARBOLES:  "+añadir.getArbol11s());
+					System.out.println( "STOCKS ARBOLES:  "+añadir.getArbols().size());
 					System.out.println( "STOCKS FLORES:  " +añadir.getAllFlors().size());
 					System.out.println( "STOCKS DECORACIONES:  "+añadir.getAllDecoracion().size());
 				}
@@ -86,7 +87,7 @@ public class main_floristeriaapp {
 		}
 		e.close();
 		}
-	}
+	
 	public static void menu() {
 		System.out.println("      \n Elige lo que deseas hacer     ");
 		System.out.println("[1] AÑADE ARBOL");
